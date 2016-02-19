@@ -38,3 +38,8 @@ TARGET_UNIFIED_DEVICE := true
 
 # inherit from the proprietary version
 -include vendor/samsung/kccat6/BoardConfigVendor.mk
+
+#TWRP -INCLUDE
+DEVICE_RESOLUTION := 1080x1920
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_INCLUDE_INJECTTWRP := true
