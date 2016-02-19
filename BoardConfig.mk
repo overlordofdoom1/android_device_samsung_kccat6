@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from common trlte
--include device/samsung/trlte-common/BoardConfigCommon.mk
+-include device/samsung/kccat6-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := kccat6,kccat6xx
 
