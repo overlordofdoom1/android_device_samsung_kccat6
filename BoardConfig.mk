@@ -27,7 +27,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12669926400
 TARGET_ARCH:= arm
 TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_kccat6_eur_defconfig
 BOARD_KERNEL_PAGESIZE:= 4096
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02600000 --tags_offset 0x02400000 --dt device/samsung/kccat6/prebuilt/dtb
 BOARD_KERNEL_CMDLINE :=  console=null androidboot.selinux=permissive androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3b7 dwc3_msm.cpu_to_affin=1
 
 # Camera
@@ -40,11 +39,3 @@ TARGET_UNIFIED_DEVICE := true
 
 # inherit from the proprietary version
 -include vendor/samsung/kccat6/BoardConfigVendor.mk
-
-#TWRP -INCLUDE
-DEVICE_RESOLUTION := 1080x1920
-RECOVERY_SDCARD_ON_DATA := true
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TW_INCLUDE_INJECTTWRP := true
-TARGET_USERIMAGES_USE_F2FS := true
