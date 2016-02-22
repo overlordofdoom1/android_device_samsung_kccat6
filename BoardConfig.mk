@@ -28,7 +28,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12669926400
 TARGET_ARCH:= arm
 TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_kccat6_eur_defconfig
 BOARD_KERNEL_PAGESIZE:= 4096
-BOARD_KERNEL_CMDLINE :=  console=null androidboot.selinux=permissive androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3b7 dwc3_msm.cpu_to_affin=1
+BOARD_KERNEL_CMDLINE :=  console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 dwc3_msm.cpu_to_affin=1 androidboot.selinux=permissive sched_enable_hmp=1
 
 # Camera
 TARGET_FIXUP_PREVIEW := true
